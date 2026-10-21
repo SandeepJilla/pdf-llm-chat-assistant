@@ -1,6 +1,13 @@
+# PDF LLM Chat Assistant
 
+[![CI](https://github.com/SandeepJilla/pdf-llm-chat-assistant/actions/workflows/ci.yml/badge.svg)](https://github.com/SandeepJilla/pdf-llm-chat-assistant/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-### Quick Start
+A self-hosted web app for chatting with your documents (PDF, TXT, CSV, JSON, MD) using free AI models from OpenRouter. Documents stay on your machine and no paid API subscription is needed.
+
+See [ROADMAP.md](ROADMAP.md) for planned work. Contributions and issues are welcome.
+
+## Quick Start
 
 ### 1. Install Dependencies
 
@@ -124,3 +131,14 @@ app.config["MAX_CONTENT_LENGTH"] = 20 * 1024 * 1024  # 20 MB total
 ALLOWED_EXT = {".pdf", ".txt", ".csv", ".json", ".md"}
 ```
 
+
+## Development
+
+```bash
+pip install -r requirements.txt pytest
+pytest -q tests
+```
+
+## License
+
+MIT. See [LICENSE](LICENSE).
